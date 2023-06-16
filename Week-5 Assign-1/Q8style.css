@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #606064;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: black;
+}
+
+.avtar img {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  border-radius: 50%;
+  border: 5px solid #ddd4d4;
+  position: relative;
+}
+
+.img1 {
+  z-index: 10;
+}
+
+.img2 {
+  position: absolute;
+  right: 50px;
+  z-index: 9;
+}
+.img3 {
+  position: absolute;
+  right: 100px;
+  z-index: 8;
+}
+.img4 {
+  position: absolute;
+  right: 150px;
+  z-index: 1;
+}

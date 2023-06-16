@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.content article,
+.navbar {
+  padding: 10px;
+  margin: 20px;
+}
+.lang-img img {
+  width: 100px;
+  height: auto;
+}
+
+section .float-right {
+  position: relative;
+}
+
+.float-right img {
+  float: right;
+}
+
+.float-left img {
+  float: left;
+}
+
+section .chatbot {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+}
+
+.chatbot img {
+  width: 80px;
+}

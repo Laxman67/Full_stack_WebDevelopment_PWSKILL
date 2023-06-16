@@ -1,0 +1,24 @@
+.tw-text-inBlue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(90 75 218 / var(--tw-text-opacity));
+}
+
+.tw-heading {
+  padding-bottom: 4rem;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(90 75 218 / var(--tw-text-opacity));
+}
+
+img {
+  width: 700px;
+
+  margin: 0 20%;
+}
+
+p{
+    margin: 0 10%;
+}

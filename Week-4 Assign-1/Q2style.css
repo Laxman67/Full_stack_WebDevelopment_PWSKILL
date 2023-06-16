@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #000000;
+  position: relative;
+  color: #f5f6fa;
+}
+
+.content {
+  padding: 80px;
+  float: left;
+  width: 50%;
+}
+
+h1,
+p {
+  padding: 15px;
+}
+button {
+  padding: 5px;
+}
+
+.image-right {
+  float: right;
+  width: 400px;
+  height: 400px;
+}
+
+button {
+  border-radius: 5px;
+  background-color:  #5050ce;
+}

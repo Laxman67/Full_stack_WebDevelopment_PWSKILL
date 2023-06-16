@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background-color: rgb(75, 72, 72);
+  padding: 0px 10%;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cc1351;
+  color: white;
+  height: auto;
+  border-radius: 10px;
+  width: 250px;
+  height: 80px;
+  margin: 40px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+}
+
+.offer-tag {
+  
+  position: absolute;
+  border-radius:5px;
+  top: -10px;
+  right:-10px ;
+  background-color: #292727;
+  width: 100px;
+  height: 25px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-size: larger;
+}

@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  margin: 0px;
+  background-color: rgb(75, 72, 72);
+  padding: 0px 10%;
+}
+.main-box {
+  text-align: center;
+  font-size: larger;
+  width: 200px;
+  height: 70px;
+  padding: 20px;
+}
+.list-box {
+  max-height: 100px;
+}
+.list-box ul {
+  background-color: aliceblue;
+  visibility: hidden;
+  margin: 10px;
+  overflow: scroll;
+}
+
+.hover-box:hover .list-box ul {
+  visibility: visible;
+}
+
+.hover-box span{
+background-color: orange;
+padding: 8px;
+}

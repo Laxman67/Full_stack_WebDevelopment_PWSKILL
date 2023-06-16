@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #555050;
+  position: relative;
+  color: #f5f6fa;
+}
+
+.card {
+  border: 2px solid black;
+  position: fixed;
+  width: 500px;
+  height: 100vh;
+  float: left; /*  <== */
+}
+.image-block img {
+  padding: 30px;
+  width: 230px;
+  height: 230px;
+}
+
+.text-block #div-right {
+  position: relative;
+  float: right;
+  display: inline-block;
+}

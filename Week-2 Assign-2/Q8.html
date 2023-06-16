@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Geolocation Example</title>
+  <script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else {
+        alert("Geolocation is not supported by this browser.");
+      }
+    }
+
+    function showPosition(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+
+      // Do something with the latitude and longitude coordinates
+      alert("Latitude: " + latitude + "\nLongitude: " + longitude);
+    }
+
+    function showError(error) {
+      switch (error.code) {
+        case error.PERMISSION_DENIED:
+          alert("User denied the request for Geolocation.");
+          break;
+        case error.POSITION_UNAVAILABLE:
+          alert("Location information is unavailable.");
+          break;
+        case error.TIMEOUT:
+          alert("The request to get user location timed out.");
+          break;
+        case error.UNKNOWN_ERROR:
+          alert("An unknown error occurred.");
+          break;
+      }
+    }
+  </script>
+</head>
+
+
+
+
+<body>
+  <button onclick="getLocation()">Get Location</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Camera Example</title>
+  <style>
+    #videoElement {
+      width: 400px;
+      height: 300px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <video id="videoElement" autoplay></video>
+
+  <script>
+    // Get access to the camera stream
+    function enableCamera() {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+          var videoElement = document.getElementById('videoElement');
+          videoElement.srcObject = stream;
+        })
+        .catch(function (error) {
+          console.log("Error accessing camera: " + error);
+        });
+    }
+
+    // Call the function to enable the camera
+    enableCamera(true);
+  </script>
+</body>
+</html>
