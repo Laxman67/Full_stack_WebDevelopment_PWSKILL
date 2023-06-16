@@ -3,3 +3,103 @@ body,
   padding: 0;
   margin: 0;
 }
+
+body,
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ***********************Navbar Styling *********************** */
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: larger;
+}
+
+#nav-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 60px);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.item-1 img {
+  width: 60px;
+  padding: 30px;
+}
+
+.item-5 {
+  background-color: #67f067;
+  align-self: center;
+  justify-self: center;
+  padding: 5px 30px;
+  border-radius: 7px;
+}
+
+.item-2 {
+  align-self: center;
+  justify-self: end;
+}
+
+.item-3 {
+  align-self: center;
+  justify-self: center;
+}
+
+.item-4 {
+  align-self: center;
+  justify-self: start;
+}
+
+/************************ Navbar styling *********************** */
+.Hero-container {
+  display: grid;
+  grid-template-columns: 50% 35% 15%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ddd;
+}
+
+.item1 {
+  /* background-color: #0000ff57; */
+
+  align-self: center;
+  justify-self: center;
+  margin: 10%;
+  font-size: 20px;
+}
+
+.item1 h1,
+p,
+b {
+  margin: 30px;
+}
+
+.item1 button {
+  margin-left: 30px;
+  padding: 7px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+}
+
+.item2 {
+  /* background-color: #78831a; */
+
+  align-self: center;
+  justify-self: center;
+  height: 100vh;
+}
+
+.item2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.item3 {
+  background-color: #eee1339a;
+  height: 100vh;
+}
