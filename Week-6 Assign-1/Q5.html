@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Q4style.css">
+</head>
+
+<style>
+    .additional-func {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 2%;
+        grid-auto-rows: 300px;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .add-func-item {
+        border: 2px solid red;
+        border-radius: 30px;
+    }
+
+    .add-func-item {
+        border: thin #c0c0c0 solid;
+        display: flex;
+        align-items: flex-end;
+        padding: 5px;
+        border-radius: 30px;
+
+    }
+
+    .add-func-item-1 {
+        background-image: url(images/pexels-alesia-kozik-6546549.jpg);
+        background-size: cover;
+    }
+
+    .add-func-item-2 {
+        background-image: url(images/pexels-gaurav-gupta-4589826.jpg);
+        background-size: cover;
+    }
+
+    .add-func-item-3 {
+        background-image: url(images/pexels-erik-mclean-9945605.jpg);
+        background-size: cover;
+    }
+
+    .add-func-item img {
+        width: 250px;
+        margin: 0;
+        background-size: cover;
+    }
+
+    /* .add-func-item figcaption {
+  background-color: #222;
+  display: 30px;
+  height: ;
+  border-radius: 10px ;
+  align-items: center;
+  justify-items: center;
+  width: 95%;
+  color: #fff;
+  margin: 0px auto;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+} */
+    .add-func-item figcaption {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 40px;
+        gap: 10px;
+        justify-items: center;
+        background-color: #241e1e;
+        color: white;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    /* // Footer  */
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    ol>li {
+        list-style-type: none;
+    }
+
+    .bottom-footer-top {
+        background-color: #5e1a1a;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(auto-fit, 250px);
+        grid-auto-rows: 250px;
+        grid-auto-columns: 100%;
+        justify-content: space-evenly;
+        justify-items: center;
+        font-size: 22px;
+        gap: 50px;
+        /* margin: 0 2%; */
+
+
+
+
+    }
+
+    .bottom-footer-bottom {
+        background-color: #5e1a1a;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* margin: 0 2%; */
+        font-size: 22px;
+        height: 60px;
+        color: #dacece;
+
+
+
+
+
+    }
+
+    .bottom-footer-items {
+        margin: 12px
+    }
+
+    .bottom-footer-items h3 {
+        color: #dacece;
+    }
+</style>
+
+<body>
+
+    <main id="main-container">
+
+        <div id="nav-container">
+            <div class="nav-items item-1">
+                <img src="images/logoFood-removebg-preview.png" alt="" srcset="">
+            </div>
+            <div class="nav-items item-2">Home</div>
+            <div class="nav-items item-3">About</div>
+            <div class="nav-items item-4">Contact</div>
+            <div class="nav-items item-5"><a style="color: black;" href="http://">Login</a></div>
+        </div>
+
+        <div class="Hero-container">
+            <div class="item-box item1">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, at culpa commodi nostrum nulla
+                    doloremque
+                    vitae dolores dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, ipsum! beatae
+                    iure.
+                    In voluptates blanditiis beatae fuga tenetur nam vitae sed ullam?</p>
+                <button type="submit"><a href="http://">Read More </a></button>
+            </div>
+
+            <div class="item-box item2">
+                <!-- <img src="./images/pexels-maria-orlova-4940719.jpg" alt="" srcset=""> -->
+                <img src="./images/pexels-alesia-kozik-6546549.jpg " alt="" srcset="">
+            </div>
+
+            <div class="item-box item3"></div>
+        </div>
+
+        <!-- Footer  -->
+        <footer class="footer-container">
+            <div class="footer-items footer-item1">
+                <img src="images/footerimg-1.png" alt="Img Error" srcset="">
+                <h3>No Minimum Order </h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A praesentium ullam reprehenderit.</p>
+            </div>
+            <div class="footer-items footer-item2">
+                <img src="images/footerimg-2.png" alt="Img Error" srcset="">
+                <h3>Live Order Tracking </h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A praesentium ullam reprehenderit.</p>
+            </div>
+            <div class="footer-items footer-item3">
+                <img src="images/footerimg-3.png" alt="Img Error" srcset="">
+                <h3>Lighting Fast Delievry </h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A praesentium ullam reprehenderit.</p>
+            </div>
+
+        </footer>
+
+
+        <!-- Additional Function  -->
+        <div class="additional-func">
+            <div class="add-func-item-1  add-func-item">
+
+                <figcaption>Lorem ipsum dolor sit amet consectetuloremfa-stack-2x Lorem, ipsum.</figcaption>
+            </div>
+            <div class="add-func-item-2  add-func-item">
+                <figcaption>Lorem ipsum dolor sit amet consectetuloremfa-stack-2x Lorem, ipsum.</figcaption>
+            </div>
+            <div class="add-func-item-3  add-func-item">
+                <figcaption>Lorem ipsum dolor sit amet consectetuloremfa-stack-2x Lorem, ipsum.</figcaption>
+            </div>
+        </div>
+
+        <!-- // Footer  -->
+        <div class="bottom-footer-top">
+            <div class="bottom-footer-item-1 bottom-footer-items">
+                <img src="images/logoFood-removebg-preview.png" alt="" srcset="" width="200px ">
+            </div>
+            <div class="bottom-footer-item-2 bottom-footer-items">
+                <h3>Navigation Links </h3>
+                <ol>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Login</li>
+
+                </ol>
+            </div>
+            <div class="bottom-footer-item-3 bottom-footer-items">
+                <h3>Learn More </h3>
+                <ol>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Terms </li>
+                    <li>Sitemap</li>
+
+                </ol>
+            </div>
+
+
+
+
+        </div>
+        <div class="bottom-footer-bottom">
+
+            <div class="bottom-footer-bottom-items ">
+                <p>@Copyright All rights Reserved </p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+
+</html>
