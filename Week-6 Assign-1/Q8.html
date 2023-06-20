@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(15, 15, 15);
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(150px, 1fr));
+            grid-template-rows: repeat(3, minmax(400px, 1fr));
+            gap: 30px;
+            justify-content: space-evenly;
+        }
+
+        .items {
+            background-color: aqua;
+            border-radius: 30px;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+        }
+
+        .items:hover {
+            opacity: 1;
+        }
+
+        .items-1 {
+            background-color: #d45959;
+        }
+
+        .items-2 {
+            background-color: #d45959;
+        }
+
+        .items-3 {
+            background-color: #be6a32;
+
+        }
+
+        .items-4 {
+            background-color: #a8a029;
+        }
+
+        .items-5 {
+            background-color: #20d4a7;
+        }
+
+        .items-6 {
+            background-color: #53941e;
+        }
+
+        .items-7 {
+            background-color: #ac0790;
+
+        }
+
+        .items-8 {
+            background-color: #d80d94;
+        }
+
+        .items-9 {
+            background-color: #66bb06;
+        }
+
+        .items-10 {
+            background-color: #9b5b86;
+        }
+
+        .items-11 {
+            background-color: #d45959;
+        }
+
+        .items-12 {
+            background-color: #0d505c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Feeling Fancy --> Hover to See Effect</h1>
+    <div class="container">
+
+
+        <div class="items-1 items"> #d45959 </div>
+        <div class="items-3 items"> #be6a32 </div>
+        <div class="items-4 items"> #a8a029 </div>
+        <div class="items-5 items"> #20d4a7 </div>
+        <div class="items-6 items"> #53941e </div>
+        <div class="items-7 items"> #ac0790 </div>
+        <div class="items-8 items"> #d80d94 </div>
+        <div class="items-2 items"> #d45959 </div>
+        <div class="items-10 items"> #9b5b86 </div>
+        <div class="items-11 items"> #d45959 </div>
+        <div class="items-12 items"> #0d505c </div>
+        <div class="items-9 items"> #66bb06 </div>
+
+    </div>
+</body>
+
+</html>
