@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-rows: repeat(3, minmax(100px, 1fr));
+            grid-auto-rows: 100px;
+            padding: 2%;
+            gap: 20px;
+            /* grid-auto-flow: dense; */
+            /* justify-items: stretch; */
+        }
+
+
+
+
+        .big {
+            grid-row: span 2;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="item-2 items small">
+            <img src="images/pexels-baskin-creative-studios-1480811.jpg" alt="" srcset="">
+        </div>
+        <div class="item-3 items big ">
+            <img src="images/pexels-muverrihhanim-14808760.jpg" alt="" srcset="">
+        </div>
+        <div class="item-4 items small">
+            <img src="images/pexels-afterglowraw-10901250.jpg" alt="" srcset="">
+        </div>
+        <div class="item-5 items big ">
+            <img src="images/pexels-alesia-kozik-6546549.jpg" alt="" srcset="">
+        </div>
+        <div class="item-6 items small">
+            <img src="images/pexels-elevate-1267320.jpg" alt="" srcset="">
+        </div>
+        <div class="item-7 items big ">
+            <img src="images/pexels-alexandra-schulz-15449638.jpg" alt="" srcset="">
+        </div>
+        <div class="item-8 items small">
+            <img src="images/pexels-rachel-claire-4993266.jpg" alt="" srcset="">
+        </div>
+        <div class="item-9 items big ">
+            <img src="images/pexels-baskin-creative-studios-1480811.jpg" alt="" srcset="">
+        </div>
+        <div class="item-8 items small">
+            <img src="images/pexels-giada-modugno-7496286.jpg" alt="" srcset="">
+        </div>
+        <div class="item-9 items big ">
+            <img src="images/pexels-kampus-production-7965850.jpg" alt="" srcset="">
+        </div>
+    </div>
+</body>
+
+</html>
