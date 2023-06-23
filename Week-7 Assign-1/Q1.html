@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/fd7cbb2d7b.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(8, 150, 155);
+        align-items: center;
+
+    }
+
+    .navitem-4 {
+        display: none;
+    }
+
+    .navitem-1 img {
+        width: 5rem;
+    }
+
+    .navitem-2 ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    @media screen and (max-width:412px) {
+        .navitem-1 img {
+            width: 4rem;
+            margin: 12px;
+        }
+
+        .navbar {
+            height: 5rem;
+        }
+
+        .navitem-4 {
+            display: block;
+            margin-right: 21px;
+        }
+
+        .navitem-4 img {
+            width: 40px;
+
+
+        }
+
+
+        .navitem-2,
+        .navitem-3 {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+
+
+    <div class="navbar">
+        <!--  </i>-->
+        <div class="navitem-1 navitems">
+            <img src="assets/free-logo-3446031-2882300.webp" alt="" srcset="">
+        </div>
+        <div class="navitem-2 navitems">
+            <ul>
+                <li>Home </li>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="navitem-3 navitems loginbtn">Login</div>
+        <div class="navitem-4 navitems loginbtn"><img src="assets/download.png" alt="" srcset=""></div>
+
+    </div>
+
+</body>
+
+</html>
