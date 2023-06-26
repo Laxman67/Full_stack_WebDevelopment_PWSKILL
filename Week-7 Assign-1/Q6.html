@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Q6style.css">
+    <style>
+        footer {
+            background-color: black;
+            margin: 0px;
+        }
+
+        #container {
+            color: whitesmoke;
+            display: grid;
+            background-color: black;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-rows: 250px;
+            grid-auto-rows: 250px;
+
+
+
+        }
+
+        .items {
+            padding: 0.9em;
+        }
+
+
+        .items ul li {
+            margin-top: 10px;
+        }
+
+        .items ul {
+
+            padding-left: 0;
+            list-style-type: none;
+            margin: 10px;
+        }
+
+        .item-4 input {
+            border-radius: 5px;
+            width: 80%;
+            height: 3em;
+            margin-top: 1.5em;
+
+
+        }
+
+
+        input[type="submit"] {
+            background-color: aqua;
+        }
+
+        @media screen and (max-width:600px) {
+
+            #container {
+                color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                gap: 1em;
+                justify-content: space-evenly;
+
+
+            }
+
+            #container {
+                width: 80%;
+                margin: 3em auto;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div id="container">
+            <div class="item-1 items">
+                <h2>One Card</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, consectetur. Lorem ipsum dolor
+                    sit
+                    amet.</p>
+            </div>
+            <div class="item-2 items">
+                <h2>Navigation</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Offers</li>
+                </ul>
+            </div>
+            <div class="item-3 items">
+                <h2>support</h2>
+                <ul>
+                    <li>F.A.Q</li>
+                    <li>Cookies Policy</li>
+                    <li>Terms of Services</li>
+                    <li>support</li>
+                </ul>
+            </div>
+            <div class="item-4 items">
+                <h2>Newsletter</h2>
+                <form action="" method="get">
+                    <input type="text" name="" id="" placeholder="your email id here">
+                    <br>
+                    <input type="submit" value="Subscribe">
+
+                </form>
+            </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>
