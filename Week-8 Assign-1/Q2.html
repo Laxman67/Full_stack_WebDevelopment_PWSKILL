@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .banner {
+            display: flex;
+            gap: 2em;
+            justify-content: space-around;
+            background-image: linear-gradient(to right, pink, purple);
+            text-align: center;
+            padding: 1em 2em;
+            border-radius: 20px;
+            margin: 0.5em 1em;
+
+
+        }
+
+        h1,
+        p {
+            color: whitesmoke;
+            font-weight: bold;
+
+
+        }
+
+        @media screen and (max-width:746px) {
+
+            .banner {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                align-content: center;
+
+            }
+
+            .items {
+                padding: 0.4em;
+                border-bottom: 2px solid rgb(248, 245, 247);
+
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="items-1 items">
+            <h1>15+</h1>
+            <p>Years Experience</p>
+        </div>
+        <div class="items-2 items">
+            <h1>25.5 T+</h1>
+            <p>Invesetd to coinyx</p>
+        </div>
+        <div class="items-3 items">
+            <h1>115+</h1>
+            <p>Professional Team</p>
+        </div>
+        <div class="items-4 items">
+            <h1>262+</h1>
+            <p>Total Global Node </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
