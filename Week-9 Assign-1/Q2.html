@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 100vh;
+            background-color: #1a1919;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            border-radius: .6em;
+            padding: 2em;
+            width: 25%;
+            background-color: #ffffff;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        select,
+        button {
+            border-width: 1px;
+            border-radius: .3em;
+            margin-bottom: 1.2em;
+        }
+
+        #form-heading {
+            align-self: center;
+        }
+
+        form * {
+            height: 1.7em;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            height: 2.3em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form class="form" action="
+        ">
+            <h2 id="form-heading">Signup</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+
+
+            <label for="batch">Batch:</label>
+
+            <select name="" id="batch">
+
+                <option value="">Sigma 2.0</option>
+                <option value="">Sigma 1.0</option>
+
+            </select>
+
+
+
+            <label for="age">Age:</label>
+            <input type="number" id="age">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <button type="submit">Signup</button>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
