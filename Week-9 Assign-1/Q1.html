@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            background-color: rgb(241, 241, 241);
+        }
+
+        .form-container {
+            border-radius: 20px;
+            background-color: rgb(251, 251, 251);
+            padding: 3em 3em;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+        }
+
+        button {
+            background-color: #5252df;
+            border: none;
+            border-radius: .3em;
+        }
+
+        input,
+        button {
+            width: 100%;
+            border: none;
+            height: 1.9em;
+
+        }
+
+        input:focus {
+            bottom: none;
+
+        }
+
+        input {
+            border-bottom: 1px grey solid;
+            background-color: rgb(251, 251, 251);
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="form-container">
+        <form class="form action="">
+            <h2>Login</h2>
+            <input type=" text">
+            <input type="password">
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
