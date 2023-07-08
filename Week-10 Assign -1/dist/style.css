@@ -540,12 +540,29 @@ video {
   margin-right: 5rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
 
 .flex {
   display: flex;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .rounded-2xl {
