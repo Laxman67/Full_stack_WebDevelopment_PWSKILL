@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .flex1 {
+        .flex {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        input {
+            width: 90vw;
+
+        }
+
+        input[placeholder] {
+            padding-left: 20px;
         }
 
         .flex-laksh {
@@ -109,6 +118,18 @@
 
     </div>
 
+    <div class="flex  flex-col text-white mt-4 bg-purple-950">
+        <div>
+            <h1 class="text-2xl">Subscribe to Our Newsletter</h1>
+        </div>
+        <div class="w-12/12 p-4 ">
+            <form action="" class="w-12/12 ">
+                <input class="rounded" type="text" placeholder="Enter your email ID">
+            </form>
+        </div>
+        <div class="my-2 font-bold rounded bg-green-500 px-3 "> <button type="submit">Subscribe Now</button></div>
+
+    </div>
 </body>
 
 </html>
