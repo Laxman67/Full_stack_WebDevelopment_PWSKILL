@@ -668,6 +668,10 @@ video {
   width: 50%;
 }
 
+.w-8\/12 {
+  width: 66.666667%;
+}
+
 .border-spacing-5 {
   --tw-border-spacing-x: 1.25rem;
   --tw-border-spacing-y: 1.25rem;
