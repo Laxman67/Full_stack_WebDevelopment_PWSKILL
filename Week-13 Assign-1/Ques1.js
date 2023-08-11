@@ -13,4 +13,8 @@ function UserCheck(name, arr) {
   }
 }
 
+// For Invalid user
+UserCheck("Paul", user);
+
+// For valid user
 UserCheck("Laxman", user);
