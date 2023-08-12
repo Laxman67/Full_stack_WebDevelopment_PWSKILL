@@ -54,14 +54,34 @@ MaxPriceReturn(products);
 MinPriceReturn(products);
 */
 
-function findMax(array) {
-  let MaxElement = array[0].price;
-  for (let index = 0; index < array.length; index++) {
+function findMaxMinProducts(products) {
 
-    if (array[index].price > array[index+(1)].price) {
-      console.log(MaxElement);
+  if (products.length === 0) {
+    console.log("The products array is empty.");
+    return;
+  }
+
+  let maxProduct = products[0];
+  let minProduct = products[0];
+
+  for (let i = 1; i < products.length; i++) {
+    
+    if (products[i].price > maxProduct.price) {
+      maxProduct = products[i];
+    } else if (products[i].price < minProduct.price) {
+      minProduct = products[i];
     }
   }
+
+  console.log("Product with the highest price:");
+  console.log("Name:", maxProduct.name);
+  console.log("Price:", maxProduct.price);
+
+  console.log("Product with the lowest price:");
+  console.log("Name:", minProduct.name);
+  console.log("Price:", minProduct.price);
 }
 
-findMax(products);
+
+
+findMaxMinProducts(products);
