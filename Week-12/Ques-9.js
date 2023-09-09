@@ -4,6 +4,5 @@ for (let i = 0; i < arr.length; i++) {
   if (arr[i] === "Mithun") {
     console.log("Found the First  String : Mithun");
     break;
-  } 
+  }
 }
-

@@ -6,7 +6,7 @@ let typeofEmail = typeof email;
 let typeofAge = typeof age;
 let typeofName = typeof Name;
 
-if (typeofAge != typeof age) {
+if (typeofAge != typeof Number) {
   console.log("Age should be Number  ");
 }
 

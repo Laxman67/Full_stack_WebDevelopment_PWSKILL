@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let products = {
+            TShirt: 4,
+            Shoes: 6,
+            Socks: 1,
+            Sweater: 5
+        }
+
+        let arrayofObject = Object.entries(products)
+        let exchageRate = 80
+        arrayofObject.forEach((element, index) => {
+            console.log(element[1] * exchageRate);
+
+        })
+
+        console.log(products);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

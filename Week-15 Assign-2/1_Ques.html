@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile Picture Upload</title>
+</head>
+
+<body>
+    <h1>Upload Profile Picture</h1>
+    <input type="file" id="profilePictureInput"></input>
+    <div id="imagePreview"></div>
+
+    <script>
+
+        const inputElement = document.getElementById("profilePictureInput");
+        const previewElement = document.getElementById("imagePreview");
+
+
+        inputElement.addEventListener("change", function () {
+            // Check if any files are selected
+            if (inputElement.files && inputElement.files[0]) {
+                const selectedFile = inputElement.files[0];
+
+                // Create a FileReader to read the selected file
+                const reader = new FileReader();
+
+                // Define the event to trigger when the FileReader has loaded the file
+                reader.onload = function (event) {
+                    // Create an image element and set the source to the loaded data
+                    const imageElement = document.createElement("img");
+                    imageElement.src = event.target.result;
+                    imageElement.setAttribute("alt", "No Profile Selected")
+
+
+                    // Clear any previous previews and append the new image element
+                    previewElement.innerHTML = "";
+                    previewElement.appendChild(imageElement);
+                };
+
+                // Read the selected file as a data URL
+                reader.readAsDataURL(selectedFile);
+            }
+        });
+    </script>
+</body>
+
+</html>

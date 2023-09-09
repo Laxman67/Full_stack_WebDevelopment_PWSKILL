@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Full Stack Web Development</h1>
+    <script>
+
+
+
+        let h1 = document.getElementById('heading')
+        setTimeout(() => {
+
+            let text = h1.textContent
+
+            let arrayofString = Array.from(text)
+            arrayofString.reverse()
+            h1.textContent = arrayofString.join("")
+
+        }, 1000)
+
+
+
+
+    </script>
+</body>
+
+</html>

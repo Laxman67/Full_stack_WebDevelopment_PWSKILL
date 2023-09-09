@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let delay = 3000
+
+        function timeRemaining() {
+            setTimeout((c) => {
+                console.log("Time Remaining", "3s");
+                setTimeout(() => {
+                    console.log("Time Remaining", "2s");
+                    setTimeout(() => {
+                        console.log("Time Remaining", "0s");
+
+
+                    }, 0)
+
+                }, 1000)
+            }, 1000)
+        }
+        setInterval(() => {
+            timeRemaining()
+            let randomNumber = (Math.floor(Math.random() * (10)))
+            console.log(randomNumber);
+
+
+        }, delay)
+
+    </script>
+</body>
+
+</html>
