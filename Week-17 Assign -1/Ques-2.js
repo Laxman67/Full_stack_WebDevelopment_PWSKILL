@@ -1,9 +1,5 @@
-function toUppercasestring(string) {
-  console.log(`The Manipulated string is ${string.toUpperCase()}`);
-}
+getProduct(90, 10);
 
-function manipluateString(string, func) {
-  return func(string);
-}
-
-manipluateString("Hello , World !", toUppercasestring);
+var getProduct = function (a, b) {
+  return a * b;
+};

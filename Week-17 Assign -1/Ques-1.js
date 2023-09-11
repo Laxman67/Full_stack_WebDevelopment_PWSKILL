@@ -1,7 +1,12 @@
-let arr = [10, 20, 30, 40, 50];
+// Function Calling -js function are fully hoisted
+// var is hoit=sted and assigned with undefined value
+// let and const are hoisted but not assigned with undefined value
 
-let doubleElement = arr.map((arr) => {
-  return arr * 2;
-});
+// Function call
 
-console.log(doubleElement);
+console.log(addNumbers(90, 100));
+
+// Function Declaration
+function addNumbers(a, b) {
+  return a + b;
+}

@@ -1,23 +1,15 @@
-// [ title, author, and year]
+{
+  console.log("Before Declaration ");
+  console.log("num1 => ", num1);
+  console.log("num2 => ", num2); // both will throw error
+  console.log("num3 => ", num3); // both will throw error
 
-let books = {
-  title: "Lords Of the Rings",
-  author: "J. R. R. Tolkien",
-  year: 1954,
-};
+  var num1 = 10;
+  let num2 = 90;
+  const num3 = 21;
 
-function createList(books) {
-  let newlist = Object.create(books);
-  books.title1 = "Title 1";
-  books.title2 = "Title 2";
-  books.title3 = "Title 3";
-  books.title4 = "Title 4";
-
-  console.log(newlist);
+  console.log("After Declaration ");
+  console.log("num1 => ", num1);
+  console.log("num2 => ", num2);
+  console.log("num3 => ", num3);
 }
-
-function arrangeit(books, createList) {
-  return createList(books);
-}
-
-console.log(arrangeit(books, createList));
